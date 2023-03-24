@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@
 }
 
 :root{
-    --cor1: #2a3e59;
+    --cor1: #000000; 
     --cor2: #54728c;
     --cor3: #f2d98d;
     --cor4: #a6785d;
@@ -23,16 +25,55 @@ html{
 }
 
 body{
-    background-color: var(--cor1);
+    height: 100vh;
     color: white;
 }
 
 header{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 109px;
     padding: 2rem 9%;
-    background-color: var(--cor1);
+
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 220px;
+    height: 69px;
+}
+header > nav{
+    font-size: 2em;
+    color: white;
+}
+header > nav > a{
+    color: #505B65;
+    margin-left: 25px;
+    transition: 1s;
+}
+header > nav > a:hover{
+    color: #ceda4dda;
+}
+
+section{
+    background-color: #54728c;
+    color: white;
+    width: 100vw;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+}
+
+.esq{
+    background-color: #a6785d;
+    width: 50%;
+}
+.dir{
+    background-color: #CFDA4D;
+}
+
+main{
+    width: 100vw;
+    height: 600px;
 }
