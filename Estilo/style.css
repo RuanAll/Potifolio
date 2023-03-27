@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
+@import '//codepen.io/chrisdothml/pen/ojLzJK.css';
+
+#orçamento p, #orçamento p::before{
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +18,6 @@
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 :root{
     --cor1: #000000; 
     --cor2: #54728c;
@@ -19,22 +26,22 @@
     --cor5: #d9665b;
 }
 
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
 body{
-    height: 100vh;
     color: white;
 }
 
+/* ----- Header ----- */
 header{
-    position: fixed;
     width: 100vw;
     height: 109px;
     padding: 2rem 9%;
-
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,37 +50,172 @@ header{
     width: 220px;
     height: 69px;
 }
-header > nav{
-    font-size: 2em;
-    color: white;
-}
 header > nav > a{
+    font-size: 1.3em;
     color: #505B65;
     margin-left: 25px;
     transition: 1s;
 }
 header > nav > a:hover{
     color: #ceda4dda;
+    text-decoration: none;
 }
+/* ---------------------*/
 
-section{
-    background-color: #54728c;
-    color: white;
-    width: 100vw;
-    height: 500px;
-    padding: 20px;
-    display: flex;
-}
-
-.esq{
-    background-color: #a6785d;
-    width: 50%;
-}
-.dir{
-    background-color: #CFDA4D;
-}
-
+/* ---------------------------------------------- */
 main{
     width: 100vw;
-    height: 600px;
+    background-color: black;
+    align-items: center;
 }
+section.home{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-position: top top;
+    background-image: url("../Imagens/Design\ sem\ nome\ \(10\).png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+.home > div#home > h1{
+    font-size: 5.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+button#orçamento{
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+button#orçamento:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: .5s;
+}
+p#butttonOrçemanto{
+    font-size: 1.7em;
+    color: white;
+}
+section.serviços{
+    background-color: #FCFCFC;
+    height: 500px;
+    margin: auto;
+    margin-top: 25px;
+}
+section.serviços > div.info{
+    margin: 15px 0;
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    padding: 10px;
+}
+div.info > h2{
+    font-size: 2.3em;
+}
+div.info > hr{
+    background-color: white;
+    width: 57px;
+}
+div.serviços{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.imgServiços > p{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5px;
+}
+.imgServiços > img{
+    border-radius: 20px;
+}
+section.serviços > div.icons{
+    width: 100%;
+    height: 230px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.596);
+    border-radius: 10px;
+}
+div#iconAtendimento{
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+div#iconAtendimento > span.material-symbols-outlined {
+    font-size: 100px; 
+    margin-top: 10%;
+}
+div#iconAtendimento > p{
+    margin-top: 5px;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+div#iconCustoBeneficio{
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+div#iconCustoBeneficio > span.material-symbols-outlined {
+    font-size: 100px;
+    margin-top: 10%;
+}
+div#iconCustoBeneficio > p{
+    margin-top: 5px;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+div#iconQualidade{
+    width:30%;
+    height: 200px;
+    text-align: center;
+}
+div#iconQualidade > span.material-symbols-outlined {
+    font-size: 100px; 
+    margin-top: 10%;
+}
+div#iconQualidade > p{
+    margin-top: 5px;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+div#iconSegurança{
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+div#iconSegurança > span.material-symbols-outlined {
+    font-size: 100px; 
+    margin-top: 10%;
+}
+div#iconSegurança > p{
+    margin-top: 5px;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+footer{
+    padding: 10px;
+    background-color: #000000;
+}
+hr{
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #505B65;
+}
+/* ---------------------------------------------- */
