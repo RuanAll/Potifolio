@@ -65,7 +65,7 @@ header > nav > a:hover{
 /* ---------------------------------------------- */
 main{
     width: 100vw;
-    background-color: black;
+    background-color: white;
     align-items: center;
 }
 section.home{
@@ -104,118 +104,29 @@ p#butttonOrçemanto{
     font-size: 1.7em;
     color: white;
 }
-section.serviços{
-    background-color: #FCFCFC;
-    height: 500px;
-    margin: auto;
-    margin-top: 25px;
-}
-section.serviços > div.info{
-    margin: 15px 0;
-    width: 100%;
-    height: 400px;
-    display: inline-block;
-    padding: 10px;
-}
-div.info > h2{
-    font-size: 2.3em;
-}
-div.info > hr{
-    background-color: white;
-    width: 57px;
-}
-div.serviços{
+
+section.secsobre{
     display: flex;
-    width: 100%;
-    height: 350px;
-    padding: 10px;
-    justify-content: space-between;
+    height: 680px;
+    color: black;
+    padding: 30px;
+    
 }
-.imgServiços > p{
-    font-size: 2em;
-    text-align: center;
-    margin-top: 5px;
-}
-.imgServiços > img{
-    border-radius: 20px;
-}
-section.serviços > div.icons{
-    width: 100%;
-    height: 230px;
-    margin: auto;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid rgba(255, 255, 255, 0.596);
-    border-radius: 10px;
-}
-div#iconAtendimento{
-    width: 30%;
-    height: 200px;
-    text-align: center;
-}
-div#iconAtendimento > span.material-symbols-outlined {
-    font-size: 100px; 
-    margin-top: 10%;
-}
-div#iconAtendimento > p{
-    margin-top: 5px;
-    font-size: 1.7em;
-    font-weight: bolder;
-}
-div#iconCustoBeneficio{
-    width: 30%;
-    height: 200px;
-    text-align: center;
-}
-div#iconCustoBeneficio > span.material-symbols-outlined {
-    font-size: 100px;
-    margin-top: 10%;
-}
-div#iconCustoBeneficio > p{
-    margin-top: 5px;
-    font-size: 1.7em;
-    font-weight: bolder;
-}
-div#iconQualidade{
-    width:30%;
-    height: 200px;
-    text-align: center;
-}
-div#iconQualidade > span.material-symbols-outlined {
-    font-size: 100px; 
-    margin-top: 10%;
-}
-div#iconQualidade > p{
-    margin-top: 5px;
-    font-size: 1.7em;
-    font-weight: bolder;
-}
-div#iconSegurança{
-    width: 30%;
-    height: 200px;
-    text-align: center;
-}
-div#iconSegurança > span.material-symbols-outlined {
-    font-size: 100px; 
-    margin-top: 10%;
-}
-div#iconSegurança > p{
-    margin-top: 5px;
-    font-size: 1.7em;
-    font-weight: bolder;
-}
+
 
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
 footer{
-    padding: 10px;
+    padding: 15px 100px 30px 100px;
     background-color: #000000;
 }
+footer > div#footer{
+    display: flex;
+}
 hr{
-    height: 2px;
-    margin-bottom: 5px;
+    height: 1px;
+    margin-bottom: 20px;
     background-color: #505B65;
 }
 /* ---------------------------------------------- */
