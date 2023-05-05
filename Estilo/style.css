@@ -1254,7 +1254,7 @@ footer{
     /* ---------------------*/
     div#img{
         width: 90%;
-        margin-top: 30px;
+        margin-top: 50px;
         display: flex;
     }
     div#img #img01{
@@ -1313,6 +1313,7 @@ footer{
     section#serviços > p{
         padding: 20px 0px;
         font-size: 16px;
+        text-align: center;
     }
     /* ---------------------*/
     section#serviços > div#serv{
